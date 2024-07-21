@@ -1,0 +1,7 @@
+.y0 {
+    flex-direction: column;
+}
+
+.y1 > .header > .submit::after {
+    display: none;
+}

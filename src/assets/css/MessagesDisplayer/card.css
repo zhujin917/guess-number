@@ -1,0 +1,40 @@
+.card {
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.card > .item {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.card > .item:first-child {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card > .item:first-child > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.card > .item:last-child {
+    width: 100%;
+    margin-bottom: 0;
+}
+.card > .item > .title {
+    font-size: 12px;
+    color: rgb(0 0 0 / .6);
+}
+.card > .item > .text {
+    font-size: 16px;
+    margin-top: 1px;
+}
+.card > .item:first-child > .text {
+    font-size: 32px;
+    margin-left: 10px;
+    margin-top: 0;
+}

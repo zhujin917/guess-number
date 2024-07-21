@@ -1,0 +1,54 @@
+.over {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0 0 0 / .4);
+}
+.over.stowed {
+    top: 25px;
+}
+.over > .reset {
+    display: inline-block;
+    color: var(--theme-color);
+    cursor: pointer;
+}
+
+.waitingRobot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.waitingRobot > .notice {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0 0 0 / .4);
+    text-align: center;
+}
+.waitingRobot > .notice > .icon {
+    font-size: 30px;
+    font-family: "remixicon";
+    margin: 0 0 5px 0;
+}
+.waitingRobot > .notice > .text {
+    font-size: 15px;
+}
+.waitingRobot.stowed > .notice {
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.waitingRobot.stowed > .notice > .icon {
+    font-size: 24px;
+    margin: 0 8px 0 0;
+}

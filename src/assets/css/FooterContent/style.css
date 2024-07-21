@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--theme-color);
+}
+span {
+    font-size: 12px;
+}
+
+.author {
+    height: 32px;
+    margin: calc((50px - 32px) / 2) 5px;
+    display: inline-block;
+}
+.author > * {
+    vertical-align: middle;
+}
+.author img {
+    width: 32px;
+    height: 32px;
+    border-radius: 114514px;
+    margin-right: 5px;
+}
+.author:hover img {
+    box-shadow: 0 5px 5px rgb(0 0 0 / .1);
+}
+.author span {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.separator {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 18px;
+    background-color: #bbb;
+    margin: 0 25px 0 20px;
+}

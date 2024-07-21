@@ -1,0 +1,91 @@
+@import url("./animation.css");
+
+.message {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+    animation: messageSlideIn .25s;
+}
+.message:last-child {
+    margin-bottom: 0;
+}
+.message.noani, .message.noani * {
+    animation: none !important;
+}
+.message.robot {
+    flex-direction: row;
+    text-align: left;
+}
+.message.you {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.message > .avatar {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    font-family: "remixicon";
+    text-align: center;
+    border-radius: 114514px;
+    border-style: solid;
+    border-width: 1px;
+}
+.message.robot > .avatar {
+    color: #fff;
+    background-color: var(--theme-color);
+    border-color: transparent;
+}
+.message.you > .avatar {
+    color: var(--theme-color);
+    background-color: #fff;
+    border-color: rgb(0 0 0 / .1);
+}
+
+.message > .content {
+    max-width: 75%;
+    line-height: 0;
+}
+
+.message > .content > .nickname {
+    color: rgb(0 0 0 / .6);
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 5px;
+}
+
+.message > .content > .bubble {
+    position: relative;
+    padding: 8px 10px;
+}
+.message.robot > .content > .bubble {
+    animation: robotBubbleAppear .25s;
+}
+.message > .content > .bubble > .backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.message.robot > .content > .bubble > .backdrop {
+    background-color: #fff;
+    animation: robotBackdropAppear .25s;
+}
+.message.you > .content > .bubble > .backdrop {
+    background-color: var(--theme-color);
+}
+.message > .content > .bubble > .text {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.message.robot > .content > .bubble > .text {
+    color: #000;
+}
+.message.you > .content > .bubble > .text {
+    color: #fff;
+}

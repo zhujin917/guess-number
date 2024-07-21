@@ -1,0 +1,30 @@
+@keyframes moreEnter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desktopChoicesEnter {
+    from {
+        transform: scale(.5);
+        right: -35px;
+        top: 30px;
+    }
+    to {
+        transform: none;
+        right: 5px;
+        top: 55px;
+    }
+}
+
+@keyframes mobileChoicesEnter {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: none;
+    }
+}

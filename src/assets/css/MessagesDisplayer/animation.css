@@ -1,0 +1,30 @@
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes robotBubbleAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes robotBackdropAppear {
+    from {
+        width: calc(100% - 10px);
+        height: calc(100% - 8px);
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}

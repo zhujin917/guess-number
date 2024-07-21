@@ -1,0 +1,10 @@
+footer {
+    height: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #7a7a7a;
+}
+footer > * {
+    vertical-align: middle;
+    color: inherit;
+}

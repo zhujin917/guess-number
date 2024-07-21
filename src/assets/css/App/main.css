@@ -1,0 +1,62 @@
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 80px auto 30px auto;
+    background-color: #ededed;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / .1);
+    overflow: hidden;
+    /* flex: 1; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+main > .title {
+    height: 50px;
+    box-shadow: 0 -1px 0 #dadada inset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main > .title > .text {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bolder;
+    margin: auto 0 auto 20px;
+}
+main > .title > .btn {
+    font-family: "remixicon";
+    font-size: 22px;
+    line-height: 22px;
+    padding: calc((50px - 22px) / 2);
+    cursor: pointer;
+}
+
+main > .messages {
+    min-height: 0;
+    overflow-y: scroll;
+    padding: 20px;
+    /* flex: 1; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+main > .keyboard {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    box-shadow: 0 -1px 0 #dadada;
+    background-color: #f2f2f2;
+    transition: margin-bottom .3s;
+}
+main > .keyboard.stowed {
+    margin-bottom: calc(50px - var(--client-height));
+}
+main > .keyboard.lower {
+    height: 100px;
+}

@@ -1,0 +1,38 @@
+.more > .choices {
+    left: 0;
+    bottom: 0;
+    right: unset !important;
+    top: unset !important;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 15px rgb(0 0 0 / .1);
+    animation: mobileChoicesEnter .3s;
+}
+.more.quit > .choices {
+    transform: translateY(100%);
+    animation: mobileChoicesEnter .3s reverse;
+}
+.more > .choices::before {
+    display: none;
+}
+.more > .choices > .choice {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    justify-content: center;
+}
+.more > .choices > .choice > .text {
+    margin-right: 0;
+}
+.more > .choices > footer {
+    display: block;
+    height: 50px;
+    text-align: center;
+    color: rgb(0 0 0 / .6);
+}
+.more > .choices > footer > * {
+    vertical-align: middle;
+    color: inherit;
+}
